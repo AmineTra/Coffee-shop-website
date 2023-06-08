@@ -81,9 +81,7 @@
                             </div>
                             <p class="text-white"></p>
                             <ul class="list-inline text-white m-0">
-                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i></li>
-                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i></li>
-                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i></li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -91,26 +89,27 @@
                         <div class="text-center p-5" style="background: rgba(150, 150, 142, 0.9);"> 
                             <h1 class="text-black mb-4 mt-5">Book Your Table</h1>
                             <form class="mb-5">
+                                <form action="connect.php" method="post">
                                 <div class="form-group">
                                     <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Name"
-                                        required="required" />
+                                        required="required" name="Name" />
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Email"
-                                        required="required" />
+                                        required="required" name="Email" />
                                 </div>
                                 <div class="form-group">
                                     <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker" name="Date"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" name="Time"/>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
+                                    <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;" name="Person" value="">
                                         <option selected>Person</option>
                                         <option value="1">Person 1</option>
                                         <option value="2">Person 2</option>
@@ -138,8 +137,8 @@
         <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Location, City, Country</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+480000000</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Rynek, Rzeszow, Poland</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+48 000 120 555</p>
                 <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -176,8 +175,7 @@
             </div>
         </div>
         <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="">Domain</a>. All Rights Reserved.</a></p>
-            <p class="m-0 text-white">Designed by <a class="font-weight-bold" href=""></a></p>
+           
         </div>
     </div>
     <!-- Footer End -->
